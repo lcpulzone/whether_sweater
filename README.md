@@ -128,7 +128,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Leigh Cepriano Pulzone - LinkedIn: [lcpulzone](https://www.linkedin.com/in/lcpulzone/) - lcpulzone@gmail.com
+Leigh Cepriano Pulzone - Twitter:  [@lcpulzone](https://twitter.com/lcpulzone) - Email: lcpulzone@gmail.com
 
 Project Link: [https://github.com/lcpulzone/whether_sweater](https://github.com/lcpulzone/whether_sweater)
 
@@ -147,15 +147,13 @@ Project Link: [https://github.com/lcpulzone/whether_sweater](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lcpulzone/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/lcpulzone/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lcpulzone/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/lcpulzone/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/lcpulzone/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/lcpulzone/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lcpulzone/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/lcpulzone/repo/issues
-[license-shield]: https://img.shields.io/github/license/lcpulzone/repo.svg?style=for-the-badge
-[license-url]: https://github.com/lcpulzone/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/lcpulzone/whether_sweater.svg?style=for-the-badge
+[contributors-url]: https://github.com/lcpulzone/whether_sweater/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lcpulzone/whether_sweater.svg?style=for-the-badge
+[forks-url]: https://github.com/lcpulzone/whether_sweater/network/members
+[stars-shield]: https://img.shields.io/github/stars/lcpulzone/whether_sweater.svg?style=for-the-badge
+[stars-url]: https://github.com/lcpulzone/whether_sweater/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lcpulzone/whether_sweater.svg?style=for-the-badge
+[issues-url]: https://github.com/lcpulzone/whether_sweater/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lcpulzone
