@@ -24,3 +24,12 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore simplecov to prevent merge errors
+/coverage/*
+
+# Ignore vcr setup to hide senstive data
+/spec/support/vcr.rb
