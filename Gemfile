@@ -29,7 +29,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'rack-cors'
 
 gem 'pry'
-gem 'fast_jsonapi'
+gem 'jsonapi-serializer'
 gem 'faraday'
 
 group :development, :test do
