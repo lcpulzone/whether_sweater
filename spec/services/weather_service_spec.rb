@@ -16,7 +16,7 @@ RSpec.describe 'Weather Service' do
         expect(actual[:current].size).to eq(15)
         expect(actual[:hourly].length).to eq(48)
         expect(actual[:daily].length).to eq(8)
-        expect(actual[:minutely])
+        # add in tests for what's not supposed to be here
       end
     end
   end
