@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Weather Poro' do
+RSpec.describe 'Current Weather Poro' do
   before :each do
     WebMock.allow_net_connect!
     VCR.turn_off!

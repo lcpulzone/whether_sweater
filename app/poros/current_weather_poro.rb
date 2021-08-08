@@ -1,4 +1,4 @@
-class WeatherPoro
+class CurrentWeatherPoro
   attr_reader :datetime, :sunrise, :sunset, :temperature, :feels_like, :humidity, :uvi, :visibility, :conditions, :icon
 
   def initialize(current_weather)
