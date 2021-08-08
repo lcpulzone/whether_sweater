@@ -1,6 +1,6 @@
 class WeatherService
   def self.find_current_daily_hourly_weather(lat, lng)
-    response = conn.get("/data/2.5/onecall?lat=#{lat}&lon=#{lng}&exclude=minutely,alerts&appid=#{ENV['OW_API_KEY']}")
+    response = conn.get("/data/2.5/onecall?lat=#{lat}&lon=#{lng}&units=imperial&exclude=minutely,alerts&appid=#{ENV['OW_API_KEY']}")
     parse_json(response)
   end
 
