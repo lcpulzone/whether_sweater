@@ -2,7 +2,6 @@ class MapService
   def self.latlng(location)
     response = conn.get("/geocoding/v1/address?key=#{ENV['MQD_API_KEY']}&location=#{location}")
     test = parse_json(response)
-    require "pry";binding.pry
   end
 
   def self.parse_json(response)
