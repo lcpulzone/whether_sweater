@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Current Weather Poro' do
+RSpec.describe 'Forecast Poro' do
   before :each do
     WebMock.allow_net_connect!
     VCR.turn_off!
@@ -8,10 +8,10 @@ RSpec.describe 'Current Weather Poro' do
   end
 
   describe 'current, daily, hourly' do
-    xit 'can return current weather attributes' do
-      VCR.use_cassette 'current_weather_poro' do
-        expect(actual)
-      end
+    it 'can return current weather attributes' do
+      # VCR.use_cassette 'forecast_poro' do
+
+      # end
     end
   end
 end

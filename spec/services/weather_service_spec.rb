@@ -4,6 +4,7 @@ RSpec.describe 'Weather Service' do
   before :each do
     # WebMock.allow_net_connect!
     # VCR.turn_off!
+    # WebMock.disable_net_connect!
     VCR.turn_on!
   end
 
