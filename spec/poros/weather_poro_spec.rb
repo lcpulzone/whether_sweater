@@ -8,8 +8,10 @@ RSpec.describe 'Weather Poro' do
   end
 
   describe 'current, daily, hourly' do
-    it 'can return current weather attributes' do
-      expect(actual)
+    xit 'can return current weather attributes' do
+      VCR.use_cassette 'current_weather_poro' do
+        expect(actual)
+      end
     end
   end
 end
