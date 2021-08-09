@@ -7,8 +7,8 @@ RSpec.describe 'Map Service Spec' do
     VCR.turn_on!
   end
 
-  describe 'response' do
-    it 'can get a response' do
+  describe 'latitude & longitude' do
+    it 'can get a response containing latitude and longitude' do
       VCR.use_cassette 'bend_latlng_response' do
         actual = MapService.latlng("bend,or")
 
