@@ -8,7 +8,7 @@ RSpec.describe 'Map Service Spec' do
   end
 
   it 'can list breweries in a location with proper attributes' do
-    actual = BreweriesFacade.list_of_breweries_by_location('bend,or')
+    actual = BreweriesFacade.list_of_breweries_by_location('bend,or', 5)
 
     # expect(actual.class).to eq(Array)
     # expect(actual[0].class).to eq(BreweriesPoro)
