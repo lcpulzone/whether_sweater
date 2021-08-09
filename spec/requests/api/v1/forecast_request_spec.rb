@@ -9,7 +9,7 @@ RSpec.describe 'Forecast Controller' do
 
   describe 'forecast details' do
     it 'can give a json response for a given location' do
-      VCR.use_cassette 'request_bend_response' do
+      VCR.use_cassette 'forecast_request_bend_or_response' do
         get '/api/v1/forecast?location=bend,or'
 
         forecast_details = JSON.parse(response.body, symbolize_names: true)
@@ -22,7 +22,7 @@ RSpec.describe 'Forecast Controller' do
     end
 
     it 'can give the current weather in a json response' do
-      VCR.use_cassette 'request_bend_response' do
+      VCR.use_cassette 'forecast_request_bend_or_response' do
         get '/api/v1/forecast?location=bend,or'
 
         forecast_details = JSON.parse(response.body, symbolize_names: true)
@@ -34,7 +34,7 @@ RSpec.describe 'Forecast Controller' do
     end
 
     it 'current weather does not have these attributes in the json response' do
-      VCR.use_cassette 'request_bend_response' do
+      VCR.use_cassette 'forecast_request_bend_or_response' do
         get '/api/v1/forecast?location=bend,or'
 
         forecast_details = JSON.parse(response.body, symbolize_names: true)
