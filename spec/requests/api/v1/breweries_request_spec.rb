@@ -7,10 +7,10 @@ RSpec.describe 'Breweries Request' do
   end
 
   it 'can list the breweries, destination and forecast' do
-    get '/api/v1/breweries?location=bend,or'
+    get '/api/v1/breweries?location=bend,or&quantity=5'
 
     brewery_details = JSON.parse(response.body, symbolize_names: true)
-require "pry";binding.pry
+    
     expect(brewery_details.class).to eq(Hash)
   end
 end
