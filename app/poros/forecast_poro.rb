@@ -26,7 +26,7 @@ class ForecastPoro
   def daily(data)
     data.map do |day|
       {
-        date: Time.at(day[:dt]).strftime("%B %d, %I:%M %p %z"),
+        date: Time.at(day[:dt]).strftime("%B %d, %Y"),
         sunrise: Time.at(day[:sunrise]).strftime("%B %d, %I:%M %p %z"),
         sunset: Time.at(day[:sunset]).strftime("%B %d, %I:%M %p %z"),
         max_temp: day[:temp][:max],
