@@ -1,5 +1,5 @@
 class BreweryForecastPoro
-  attr_reader :summary, :temperature
+  attr_reader :id, :destination, :forecast, :breweries
 
   def initialize(locate, forecast_data, brewery_data)
     @id = nil
