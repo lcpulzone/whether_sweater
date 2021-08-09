@@ -12,7 +12,7 @@ RSpec.describe 'Breweries Request' do
     brewery_details = JSON.parse(response.body, symbolize_names: true)
 
     expect(brewery_details.class).to eq(Hash)
-    expect(brewery_details[:data].count).to eq(Hash)
+    expect(brewery_details[:data].count).to eq(3)
     expect(brewery_details[:data][:attributes][:breweries].count).to eq(5)
   end
 end
