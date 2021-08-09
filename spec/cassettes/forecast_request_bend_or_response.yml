@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 09 Aug 2021 01:35:21 GMT
+      - Mon, 09 Aug 2021 01:34:44 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 09 Aug 2021 01:35:21 GMT
+      - Mon, 09 Aug 2021 01:34:44 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=779C6370E073EBACFC493549D84AF2DD; Path=/; HttpOnly
+      - JSESSIONID=023945418775178C77C5B662AA28C67B; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"bend,or"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bend","adminArea5Type":"City","adminArea4":"Deschutes
-        County","adminArea4Type":"County","adminArea3":"OR","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039733","unknownInput":"","type":"s","latLng":{"lat":44.058088,"lng":-121.31515},"displayLatLng":{"lat":44.058088,"lng":-121.31515},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=cWPArUZmFbzIKHAMfKfPuyqfvpwuLOLN&type=map&size=225,160&locations=44.058088,-121.31515|marker-sm-50318A-1&scalebar=true&zoom=12&rand=2140623492"}]}]}'
-  recorded_at: Mon, 09 Aug 2021 01:35:21 GMT
+        County","adminArea4Type":"County","adminArea3":"OR","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039733","unknownInput":"","type":"s","latLng":{"lat":44.058088,"lng":-121.31515},"displayLatLng":{"lat":44.058088,"lng":-121.31515},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=cWPArUZmFbzIKHAMfKfPuyqfvpwuLOLN&type=map&size=225,160&locations=44.058088,-121.31515|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1957216248"}]}]}'
+  recorded_at: Mon, 09 Aug 2021 01:34:44 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=0cbaaf82aedb3553a9a3421778bbfd94&exclude=minutely,alerts&lat=44.058088&lon=-121.31515&units=imperial
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 09 Aug 2021 01:35:22 GMT
+      - Mon, 09 Aug 2021 01:34:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -149,5 +149,5 @@ http_interactions:
         rain","icon":"10d"}],"clouds":7,"pop":0.34,"rain":0.36,"uvi":9},{"dt":1628971200,"sunrise":1628946503,"sunset":1628997094,"moonrise":1628971500,"moonset":1629009000,"moon_phase":0.22,"temp":{"day":95.23,"min":62.29,"max":95.23,"night":62.29,"eve":74.21,"morn":74.97},"feels_like":{"day":90.73,"night":60.39,"eve":72.88,"morn":73.99},"pressure":1013,"humidity":14,"dew_point":38.75,"wind_speed":15.59,"wind_deg":304,"wind_gust":14.36,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":4,"pop":0,"uvi":9},{"dt":1629057600,"sunrise":1629032972,"sunset":1629083403,"moonrise":1629062460,"moonset":0,"moon_phase":0.25,"temp":{"day":87.66,"min":55.99,"max":87.66,"night":56.41,"eve":68.32,"morn":66.51},"feels_like":{"day":83.98,"night":54.57,"eve":66.51,"morn":64.27},"pressure":1011,"humidity":15,"dew_point":33.67,"wind_speed":12.03,"wind_deg":328,"wind_gust":13.31,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"clouds":76,"pop":0,"uvi":9}]}'
-  recorded_at: Mon, 09 Aug 2021 01:35:22 GMT
+  recorded_at: Mon, 09 Aug 2021 01:34:44 GMT
 recorded_with: VCR 6.0.0

@@ -7,17 +7,26 @@ RSpec.describe 'Weather Facade' do
     VCR.turn_on!
   end
 
-  describe 'current, daily, hourly'
-  it 'can give the current weather' do
-    VCR.use_cassette 'facade_bend_current_weather' do
-      actual = WeatherFacade.current_daily_hourly_weather(44.058088, -121.31515)
-      expect(actual.class).to eq(CurrentWeatherPoro)
-      expect(actual.datetime).to eq("August 08, 09:05 AM -0700")
-      expect(actual.sunset).to eq("August 08, 08:20 PM -0700")
-      expect(actual.temperature).to eq(58.77)
-      expect(actual.feels_like).to eq(57.07)
-      expect(actual.conditions).to eq("clear sky")
-      # expect(actual.pressure.present?).to eq(true)
+  describe 'current, daily, hourly' do
+    it 'can give the current weather' do
+      VCR.use_cassette 'facade_bend_current_weather' do
+        actual = WeatherFacade.current_daily_hourly_weather('bend,or')
+
+        expect(actual.class).to eq(ForecastPoro)
+        expect(actual.current_weather[:datetime]).to eq("August 08, 06:34 PM -0700")
+        expect(actual.current_weather[:sunset]).to eq("August 08, 08:20 PM -0700")
+        expect(actual.current_weather[:temperature]).to eq(71.83)
+        expect(actual.current_weather[:feels_like]).to eq(70.18)
+        expect(actual.current_weather[:conditions]).to eq("clear sky")
+      end
+    end
+
+    it 'does not give attributes that are not needed' do
+      VCR.use_cassette 'facade_bend_current_weather' do
+        actual = WeatherFacade.current_daily_hourly_weather('bend,or')
+
+        expect(actual.current_weather[:pressure].nil?).to eq(true)
+      end
     end
   end
 end
