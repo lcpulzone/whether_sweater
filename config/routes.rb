@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      get '/breweries', to: 'breweries#index'
       get '/forecast', to: 'forecasts#index'
     end
   end
