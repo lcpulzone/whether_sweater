@@ -1,11 +1,11 @@
 class BreweryForecastPoro
   attr_reader :id, :destination, :forecast, :breweries
 
-  def initialize(locate, forecast_data, brewery_data)
+  def initialize(locate, forecast_data, brewery_data, quantity)
     @id = nil
     @destination = locate[:results][0][:providedLocation][:location]
     @forecast = forecasted_data(forecast_data)
-    @breweries = breweries_data(brewery_data)
+    @breweries = breweries_data(brewery_data).take(quantity)
   end
 
   def forecasted_data(data)
