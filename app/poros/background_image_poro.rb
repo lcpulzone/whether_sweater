@@ -1,7 +1,8 @@
 class BackgroundImagePoro
-  attr_reader :location, :description, :image_urls, :credit
+  attr_reader :id, :location, :description, :image_urls, :credit
 
   def initialize(location, image_data)
+    @id = nil
     @location = location
     @description = image_data[:results][0][:alt_description]
     @image_urls = all_image_urls(image_data[:results][0][:urls])
