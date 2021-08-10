@@ -12,9 +12,8 @@ RSpec.describe 'Background Image Service' do
       actual = BackgroundImageService.find_location_image('bend,oregon')
 
       expect(actual.class).to eq(Hash)
-      expect(actual[:results][0][:urls].class).to eq(Hash) #image_url
-      expect(actual[:results][0][:user][:name]).to eq("everett mcintire") #author
-  
+      expect(actual[:results][0][:urls].class).to eq(Hash)
+      expect(actual[:results][0][:user][:name]).to eq("everett mcintire") 
     end
   end
 end
