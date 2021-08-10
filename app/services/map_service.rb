@@ -4,6 +4,11 @@ class MapService
     parse_json(response)
   end
 
+  def self.directions_to_and_from(from, to)
+    response = conn.get("/directions/v2/route?key=#{ENV['MQD_API_KEY']}&from=#{from}&to=#{to}")
+    parse_json(response)
+  end
+
   def self.parse_json(response)
     JSON.parse(response.body, symbolize_names: true)
   end
