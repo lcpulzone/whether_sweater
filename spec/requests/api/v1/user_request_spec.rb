@@ -10,8 +10,22 @@ RSpec.describe 'User Resquest' do
   describe 'Happy Path' do
     it 'can give a valid response' do
       user_info = {
-        'email': 'hawkthedog@pets.com'
-        'password': 'helovesfood'
+        'email': 'hawkthedog@pets.com',
+        'password': 'helovesfood',
+        'password_confirmation': 'helovesfood'
+      }
+
+      post api_v1_users_path, params: user_info
+
+
+    end
+  end
+
+  describe 'Sad Path' do
+    it 'can give an invalid response' do
+      user_info = {
+        'email': 'hawkthedog@pets.com',
+        'password': nil,
         'password_confirmation': 'helovesfood'
       }
 
