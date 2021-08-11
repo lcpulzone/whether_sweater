@@ -38,15 +38,26 @@ RSpec.describe 'Roadtrip Resquest' do
   end
 
   describe 'Sad Path' do
-    xit 'can give an invalid response' do
-      user_info = {
-        'email': 'hawkthedog@pets.com',
-        'password': nil
+    it 'can give a 401 response if api key does not match' do
+      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+                          password_confirmation: "helovesfood", api_key: "123456789")
+      headers = {
+        'Content-Type': "application/json",
+        'Accept': "application/json"
       }
 
-      post api_v1_road_trip_path, params: user_info
+      body = {
+        "origin": "Denver,CO",
+        "destination": "Bend,OR",
+        "api_key": "333999678"
+      }
 
+      post api_v1_road_trip_path, headers: headers, params: body.to_json
 
+      roadtrip = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response.status).to eq(401)
+      expect(response.body).to eq("{\"error\":\"You are not authorized\"}")
     end
   end
 end
