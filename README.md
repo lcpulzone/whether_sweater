@@ -82,19 +82,24 @@ To get a local copy up and running follow these simple steps.
 * Ruby 2.7.2
 * API from [Open Weather](https://openweathermap.org/appid)
 
-1. ```sh
+1.
+```sh
 click 'sign up'
 ```
-2. ```sh
+2.
+```sh
 click 'API keys'
 ```
-3. ```sh
+3.
+```sh
 copy key - make sure to name your key!
 ```
-4. ```sh
+4.
+```sh
 open your applicaiton.yml file
 ```
-5. ```sh
+5.
+```sh
 add your key to the bottom of the file exactly as below
 ```
 ```sh
@@ -102,19 +107,24 @@ OW_API_KEY: your API key here
 ```
 
 * API from [Map Quest](https://developer.mapquest.com/)
-1. ```sh
+1.
+```sh
 click 'Get your Free API Key'
 ```
-2. ```sh
+2.
+```sh
 sign up for an account or login
 ```
-3. ```sh
+3.
+```sh
 copy key listed under 'My Keys'
 ```
-4. ```sh
+4.
+```sh
 open your applicaiton.yml file
 ```
-5. ```sh
+5.
+```sh
 add your key to the bottom of the file
 ```
 ```sh
