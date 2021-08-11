@@ -9,29 +9,47 @@ RSpec.describe 'User Resquest' do
 
   describe 'Happy Path' do
     it 'can give a valid response' do
-      user_info = {
+      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+                          password_confirmation: "helovesfood", api_key: "123456789")
+      headers = {
+        'Content-Type': "application/json",
+        'Accept': "application/json"
+      }
+
+      body = {
         'email': 'hawkthedog@pets.com',
         'password': 'helovesfood',
         'password_confirmation': 'helovesfood'
       }
 
-      post api_v1_users_path, params: user_info
+      post api_v1_users_path, headers: headers, params: body.to_json
 
+      user = JSON.parse(response.body, symbolize_names: true)
 
+      # expect(response.status).to eq(200)
     end
   end
 
   describe 'Sad Path' do
     it 'can give an invalid response' do
-      user_info = {
+      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+                          password_confirmation: "helovesfood", api_key: "123456789")
+      headers =
+      {
+        'Content-Type': "application/json",
+        'Accept': "application/json"
+      }
+
+      body =
+      {
         'email': 'hawkthedog@pets.com',
         'password': nil,
         'password_confirmation': 'helovesfood'
       }
 
-      post api_v1_users_path, params: user_info
+      post api_v1_users_path, headers: headers, params: body.to_json
 
-      
+
     end
   end
 end

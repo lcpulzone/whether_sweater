@@ -8,28 +8,56 @@ RSpec.describe 'Roadtrip Resquest' do
   end
 
   describe 'Happy Path' do
-    xit 'can give a valid response' do
-      user_info = {
-        'email': 'hawkthedog@pets.com',
-        'password': 'helovesfood'
+    it 'can give a valid response' do
+      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+                          password_confirmation: "helovesfood", api_key: "123456789")
+      headers = {
+        'Content-Type': "application/json",
+        'Accept': "application/json"
       }
 
-      post api_v1_road_trip_path, params: user_info
+      body = {
+        "origin": "Denver,CO",
+        "destination": "Bend,OR",
+        "api_key": "123456789"
+      }
 
+      post api_v1_road_trip_path, headers: headers, params: body.to_json
 
+      roadtrip = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      expect(roadtrip[:data].count).to eq(3)
+      expect(roadtrip[:data][:attributes].count).to eq(4)
+      expect(roadtrip[:data][:attributes]).to have_key(:start_city)
+      expect(roadtrip[:data][:attributes]).to have_key(:end_city)
+      expect(roadtrip[:data][:attributes]).to have_key(:travel_time)
+      expect(roadtrip[:data][:attributes]).to have_key(:weather_at_eta)
     end
   end
 
   describe 'Sad Path' do
-    xit 'can give an invalid response' do
-      user_info = {
-        'email': 'hawkthedog@pets.com',
-        'password': nil
+    it 'can give a 401 response if api key does not match' do
+      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+                          password_confirmation: "helovesfood", api_key: "123456789")
+      headers = {
+        'Content-Type': "application/json",
+        'Accept': "application/json"
       }
 
-      post api_v1_road_trip_path, params: user_info
+      body = {
+        "origin": "Denver,CO",
+        "destination": "Bend,OR",
+        "api_key": "333999678"
+      }
 
+      post api_v1_road_trip_path, headers: headers, params: body.to_json
 
+      roadtrip = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response.status).to eq(401)
+      expect(response.body).to eq("{\"error\":\"You are not authorized\"}")
     end
   end
 end
