@@ -66,9 +66,8 @@
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Ruby on Rails](https://rubyonrails.org/)
+
 
 
 
@@ -79,11 +78,48 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Rails 5.2.6
+* Ruby 2.7.2
+* API from [Open Weather](https://openweathermap.org/appid)
+
+1. ```sh
+click 'sign up'
+```
+2. ```sh
+click 'API keys'
+```
+3. ```sh
+copy key - make sure to name your key!
+```
+4. ```sh
+open your applicaiton.yml file
+```
+5. ```sh
+add your key to the bottom of the file exactly as below
+```
+```sh
+OW_API_KEY: your API key here
+```
+
+* API from [Map Quest](https://developer.mapquest.com/)
+1. ```sh
+click 'Get your Free API Key'
+```
+2. ```sh
+sign up for an account or login
+```
+3. ```sh
+copy key listed under 'My Keys'
+```
+4. ```sh
+open your applicaiton.yml file
+```
+5. ```sh
+add your key to the bottom of the file
+```
+```sh
+MQD_API_KEY: your API key here
+```
 
 ### Installation
 
@@ -91,11 +127,11 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/lcpulzone/whether_sweater.git
    ```
-2. Install NPM packages
+2. Bundle install
    ```sh
-   npm install
+   bundle install
    ```
-
+3.
 
 
 <!-- USAGE EXAMPLES -->
