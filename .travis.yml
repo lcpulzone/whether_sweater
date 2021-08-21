@@ -3,14 +3,6 @@ rbenv:
 - 2.7.2
 addons:
   postgresql: 9.6
-cache:
-  - bundler
-  - yarn
-  before_install:
-    - nvm install --lts
-    before_script:
-      - bundle install --jobs=3 --retry=3
-      - yarn
 script:
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
