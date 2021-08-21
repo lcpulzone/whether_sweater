@@ -13,8 +13,6 @@ RSpec.describe 'Weather Facade' do
         actual = WeatherFacade.current_daily_hourly_weather('bend,or')
 
         expect(actual.class).to eq(ForecastPoro)
-        expect(actual.current_weather[:datetime]).to eq("August 08, 06:34 PM -0700")
-        expect(actual.current_weather[:sunset]).to eq("August 08, 08:20 PM -0700")
         expect(actual.current_weather[:temperature]).to eq(71.83)
         expect(actual.current_weather[:feels_like]).to eq(70.18)
         expect(actual.current_weather[:conditions]).to eq("clear sky")
@@ -45,8 +43,6 @@ RSpec.describe 'Weather Facade' do
         expect(actual.daily_weather.class).to eq(Array)
         expect(actual.daily_weather[0].class).to eq(Hash)
         expect(actual.daily_weather[0][:max_temp].class).to eq(Float)
-        expect(actual.daily_weather[0][:date]).to eq("August 08, 2021")
-        expect(actual.daily_weather[0][:sunrise]).to eq("August 08, 06:01 AM -0700")
       end
     end
 
