@@ -46,6 +46,7 @@ group :development, :test do
   gem 'figaro'
   gem 'webmock'
   gem 'vcr'
+  gem 'travis'
 end
 
 group :development do
