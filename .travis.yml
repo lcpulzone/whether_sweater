@@ -3,7 +3,6 @@ rbenv:
 - 2.7.2
 addons:
   postgresql: 9.6
-install: gem install rails
 script:
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec --require spec_helper
