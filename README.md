@@ -10,7 +10,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/lcpulzone/whether_sweater">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Whether, Sweater</h3>
@@ -22,11 +21,6 @@
     <a href="https://github.com/lcpulzone/whether_sweater"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lcpulzone/whether_sweater">View Demo</a>
-    ·
-    <a href="https://github.com/lcpulzone/whether_sweater/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/lcpulzone/whether_sweater/issues">Request Feature</a>
   </p>
 </p>
 
@@ -62,7 +56,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Whether, Sweater is a fictional back-end application built to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
+
+The front-end communicated with back-end through an API.
+
+The goal of this project was to work in a service-oriented architecture to expose an API that satisfied the front-end team’s requirements.
+
+### Main learning goals:
+- Expose an API that aggregates data from multiple external APIs
+- Expose an API that requires an authentication token
+- Expose an API for CRUD functionality
+- Determine completion criteria based on the needs of other developers
+- Research, select, and consume an API based on your needs as a developer
 
 ### Built With
 
@@ -82,66 +87,24 @@ To get a local copy up and running follow these simple steps.
 * Ruby 2.7.2
 * API from [Open Weather](https://openweathermap.org/appid)
 
-1.
-```sh
-click 'sign up'
-```
-2.
-```sh
-click 'API keys'
-```
-3.
-```sh
-copy key - make sure to name your key!
-```
-4.
-```sh
-open your applicaiton.yml file
-```
-5.
-```sh
-add your key to the bottom of the file exactly as below
-```
-```sh
-OW_API_KEY: your API key here
-```
-
 * API from [Map Quest](https://developer.mapquest.com/)
-1.
-```sh
-click 'Get your Free API Key'
-```
-2.
-```sh
-sign up for an account or login
-```
-3.
-```sh
-copy key listed under 'My Keys'
-```
-4.
-```sh
-open your applicaiton.yml file
-```
-5.
-```sh
-add your key to the bottom of the file
-```
-```sh
-MQD_API_KEY: your API key here
-```
+
+* API from [Unsplash](https://unsplash.com/developers)
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/lcpulzone/whether_sweater.git
-   ```
-2. Bundle install
-   ```sh
-   bundle install
-   ```
-3.
+1. Fork & clone this repo
+
+2. Run `bundle install` to install gem packages
+
+3. Run `rails db:{drop,create,migrate}` to set up the database
+
+4. Run `bundle exec figaro install` then add your API keys to the `config/application.yml` file as:
+`OW_API_KEY` for Open Weather,
+`MQD_API_KEY` for Map Quest, and
+`UN_API_KEY` for Unsplash
+
+5. Run `rails s` and navigate to [localhost:3000](http://localhost3000) to consume Whether, Sweater's API endpoints
 
 
 <!-- USAGE EXAMPLES -->

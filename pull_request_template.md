@@ -1,7 +1,7 @@
 ## Checklist
 - [ ] Tests written where required
 - [ ] All tests passing
-- [ ] SimpleCov at 100%
+- SimpleCov at <percentage>%
 
 ## Changes
 
