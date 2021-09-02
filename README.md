@@ -10,7 +10,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/lcpulzone/whether_sweater">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Whether, Sweater</h3>
@@ -22,11 +21,6 @@
     <a href="https://github.com/lcpulzone/whether_sweater"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lcpulzone/whether_sweater">View Demo</a>
-    ·
-    <a href="https://github.com/lcpulzone/whether_sweater/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/lcpulzone/whether_sweater/issues">Request Feature</a>
   </p>
 </p>
 
@@ -62,7 +56,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project was
+
+Whether, Sweater is a fictional back-end application built to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
+
+The front-end communicated with back-end through an API.
+
+The goal was to work in a service-oriented architecture to expose an API that satisfied the front-end team’s requirements.
+
+Here are some of the main learning goals
 
 ### Built With
 
@@ -82,26 +84,7 @@ To get a local copy up and running follow these simple steps.
 * Ruby 2.7.2
 * API from [Open Weather](https://openweathermap.org/appid)
 
-1.
-```sh
-click 'sign up'
-```
-2.
-```sh
-click 'API keys'
-```
-3.
-```sh
-copy key - make sure to name your key!
-```
-4.
-```sh
-open your applicaiton.yml file
-```
-5.
-```sh
-add your key to the bottom of the file exactly as below
-```
+
 ```sh
 OW_API_KEY: your API key here
 ```
