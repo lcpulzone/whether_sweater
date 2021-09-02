@@ -99,7 +99,12 @@ To get a local copy up and running follow these simple steps.
 
 3. Run `rails db:{drop,create,migrate}` to set up the database
 
-4. 
+4. Run `bundle exec figaro install` then add your API keys to the `config/application.yml` file as:
+`OW_API_KEY` for Open Weather,
+`MQD_API_KEY` for Map Quest, and
+`UN_API_KEY` for Unsplash
+
+5. Run `rails s` and navigate to [localhost:3000](http://localhost3000) to consume Whether, Sweater's API endpoints
 
 
 <!-- USAGE EXAMPLES -->
