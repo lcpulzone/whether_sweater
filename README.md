@@ -56,15 +56,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was
-
 Whether, Sweater is a fictional back-end application built to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
 
 The front-end communicated with back-end through an API.
 
-The goal was to work in a service-oriented architecture to expose an API that satisfied the front-end team’s requirements.
+The goal of this project was to work in a service-oriented architecture to expose an API that satisfied the front-end team’s requirements.
 
-Here are some of the main learning goals
+### Main learning goals:
+- Expose an API that aggregates data from multiple external APIs
+- Expose an API that requires an authentication token
+- Expose an API for CRUD functionality
+- Determine completion criteria based on the needs of other developers
+- Research, select, and consume an API based on your needs as a developer
 
 ### Built With
 
@@ -84,47 +87,19 @@ To get a local copy up and running follow these simple steps.
 * Ruby 2.7.2
 * API from [Open Weather](https://openweathermap.org/appid)
 
-
-```sh
-OW_API_KEY: your API key here
-```
-
 * API from [Map Quest](https://developer.mapquest.com/)
-1.
-```sh
-click 'Get your Free API Key'
-```
-2.
-```sh
-sign up for an account or login
-```
-3.
-```sh
-copy key listed under 'My Keys'
-```
-4.
-```sh
-open your applicaiton.yml file
-```
-5.
-```sh
-add your key to the bottom of the file
-```
-```sh
-MQD_API_KEY: your API key here
-```
+
+* API from [Unsplash](https://unsplash.com/developers)
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/lcpulzone/whether_sweater.git
-   ```
-2. Bundle install
-   ```sh
-   bundle install
-   ```
-3.
+1. Fork & clone this repo
+
+2. Run `bundle install` to install gem packages
+
+3. Run `rails db:{drop,create,migrate}` to set up the database
+
+4. 
 
 
 <!-- USAGE EXAMPLES -->
