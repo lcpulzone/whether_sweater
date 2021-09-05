@@ -9,7 +9,7 @@ RSpec.describe 'User Resquest' do
 
   describe 'Happy Path' do
     it 'can give a valid response' do
-      @user = User.create!(email: "hawkthedog@pets.com", password: "helovesfood",
+      @user = User.new(email: "hawkthedog@pets.com", password: "helovesfood",
                           password_confirmation: "helovesfood", api_key: "123456789")
       headers = {
         'Content-Type': "application/json",
@@ -26,7 +26,7 @@ RSpec.describe 'User Resquest' do
 
       user = JSON.parse(response.body, symbolize_names: true)
 
-      # expect(response.status).to eq(200)
+      expect(response.status).to eq(201)
     end
   end
 
