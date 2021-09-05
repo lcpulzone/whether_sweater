@@ -286,9 +286,9 @@ To get a local copy up and running follow these simple steps.
 
   ```
   {
-    "email": ""missfrizbeethemouse@pets.com",
-    "password": "shelovesstrawberries",
-    "password_confirmation":  "shelovesstrawberries"
+    "email": "missfrizbeethemouse@pets.com",
+    "password": "***************ries",
+    "password_confirmation":  "***************ries"
   }
   ```
 
@@ -300,7 +300,7 @@ To get a local copy up and running follow these simple steps.
         "type": "users",
         "attributes": {
             "email": "missfrizbeethemouse@pets.com",
-            "api_key": "FFFJGIuqRO31yWF82wAAYbd6IrqXfO9x"
+            "api_key": "****************************fO9x"
         }
     }
 }
@@ -314,7 +314,7 @@ To get a local copy up and running follow these simple steps.
   ```
   {
     "email": "tedthedog@pets.com",
-    "password": "helovespapertowels"
+    "password": "**************wels"
   }
   ```
 
@@ -326,7 +326,7 @@ To get a local copy up and running follow these simple steps.
         "type": "users",
         "attributes": {
             "email": "tedthedog@pets.com",
-            "api_key": "fJc8W0oozaJ4Pp-VK4cOIFRT7P87RPhR"
+            "api_key": "****************************RPhR"
         }
     }
 }
@@ -341,7 +341,7 @@ To get a local copy up and running follow these simple steps.
   {
     "origin": "Denver,CO",
     "destination": "Bend,OR",
-    "api_key": "Ht5AeVuKOY5iRGg2lhNZCGFiVzVNdXIp"
+    "api_key": "****************************dXIp"
   }
   ```
 
