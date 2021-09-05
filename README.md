@@ -381,9 +381,15 @@ Project Link: [https://github.com/lcpulzone/whether_sweater](https://github.com/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Project Board](https://github.com/lcpulzone/whether_sweater/projects/1)
+
+* API from [Open Weather](https://openweathermap.org/appid)
+
+* API from [Map Quest](https://developer.mapquest.com/)
+
+* API from [Unsplash](https://unsplash.com/developers)
+
+* Photographer Attribution [Guidelines](https://help.unsplash.com/en/articles/2511315-guideline-attribution)
 
 
 
