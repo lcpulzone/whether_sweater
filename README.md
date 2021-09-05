@@ -45,11 +45,11 @@
     </li>
     <li><a href="#endpoints">Endpoints</a></li>
     <ul>
-      <li><a href="#retrieve_weather_for_a_city">Retrieve weather for a city</a></li>
-      <li><a href="#background_image_for_a_city">Background image for a city</a></li>
-      <li><a href="#user_registration">User registration</a></li>
+      <li><a href="#retrieve-weather-for-a-city">Retrieve weather for a city</a></li>
+      <li><a href="#background-image-for-a-city">Background image for a city</a></li>
+      <li><a href="#user-registration">User registration</a></li>
       <li><a href="#login">Login</a></li>
-      <li><a href="#road_trip">Road Trip</a></li>
+      <li><a href="#road-trip">Road Trip</a></li>
     </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
