@@ -44,6 +44,13 @@
       </ul>
     </li>
     <li><a href="#endpoints">Endpoints</a></li>
+    <ul>
+      <li><a href="#retrieve_weather_for_a_city">Retrieve weather for a city</a></li>
+      <li><a href="#background_image_for_a_city">Background image for a city</a></li>
+      <li><a href="#user_registration">User registration</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#road_trip">Road Trip</a></li>
+    </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -109,7 +116,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Endpoints
 
-#### Retrieve weather for a city
+### Retrieve weather for a city
 - **Request** `GET /api/v1/forecast?location=<location>`
 
 - *Sample Request:*
@@ -237,7 +244,7 @@ To get a local copy up and running follow these simple steps.
 }
 ```
 
-#### Background image for the city
+### Background image for the city
 - **Request** `GET /api/v1/backgrounds?location=<location>`
 
 - *Sample Request:*
@@ -272,7 +279,7 @@ To get a local copy up and running follow these simple steps.
 }
 ```
 
-#### User Registration
+### User Registration
 - **Request** `POST /api/v1/users`
 
 - *Sample Request:*
@@ -299,7 +306,7 @@ To get a local copy up and running follow these simple steps.
 }
 ```
 
-#### Login
+### Login
 - **Request** `POST /api/v1/sessions`
 
 - *Sample Request:*
@@ -325,7 +332,7 @@ To get a local copy up and running follow these simple steps.
 }
 ```
 
-#### Road Trip
+### Road Trip
 - **Request** `POST /api/v1/road_trip`
 
 - *Sample Request:*
