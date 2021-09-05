@@ -44,6 +44,13 @@
       </ul>
     </li>
     <li><a href="#endpoints">Endpoints</a></li>
+    <ul>
+      <li><a href="#retrieve_weather_for_a_city">Retrieve weather for a city</a></li>
+      <li><a href="#background_image_for_a_city">Background image for a city</a></li>
+      <li><a href="#user_registration">User registration</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#road_trip">Road Trip</a></li>
+    </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -78,8 +85,6 @@ The goal of this project was to work in a service-oriented architecture to expos
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
 * Rails 5.2.6
@@ -91,6 +96,8 @@ To get a local copy up and running follow these simple steps.
 * API from [Unsplash](https://unsplash.com/developers)
 
 ### Installation
+
+To get a local copy up and running follow these simple steps.
 
 1. Fork & clone this repo
 
@@ -109,10 +116,14 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Endpoints
 
-#### Retrieve weather for a city
+### Retrieve weather for a city
 - **Request** `GET /api/v1/forecast?location=<location>`
 
 - *Sample Request:*
+
+  `GET /api/v1/forecast?location=bend,or`
+
+- *Sample Response:*
 ```
 {
     "data": {
@@ -120,112 +131,112 @@ To get a local copy up and running follow these simple steps.
         "type": "forecast",
         "attributes": {
             "current_weather": {
-                "datetime": "August 08, 09:30 PM -0700",
-                "sunrise": "August 08, 06:01 AM -0700",
-                "sunset": "August 08, 08:20 PM -0700",
-                "temperature": 60.82,
-                "feels_like": 58.62,
-                "humidity": 43,
-                "uvi": 0,
-                "visibility": 10000,
-                "conditions": "clear sky",
-                "icon": "01n"
+                "datetime": "September 05, 11:05 AM -0600",
+                "sunrise": "September 05, 07:33 AM -0600",
+                "sunset": "September 05, 08:34 PM -0600",
+                "temperature": 70.38,
+                "feels_like": 68.47,
+                "humidity": 29,
+                "uvi": 3.09,
+                "visibility": 1609,
+                "conditions": "haze",
+                "icon": "50d"
             },
             "daily_weather": [
                 {
-                    "date": "August 08, 2021",
-                    "sunrise": "August 08, 06:01 AM -0700",
-                    "sunset": "August 08, 08:20 PM -0700",
-                    "max_temp": 76.73,
-                    "min_temp": 51.3,
+                    "date": "September 05, 2021",
+                    "sunrise": "September 05, 07:33 AM -0600",
+                    "sunset": "September 05, 08:34 PM -0600",
+                    "max_temp": 89.8,
+                    "min_temp": 53.22,
                     "conditions": "clear sky",
                     "icon": "01d"
                 },
                 {
-                    "date": "August 09, 2021",
-                    "sunrise": "August 09, 06:02 AM -0700",
-                    "sunset": "August 09, 08:18 PM -0700",
-                    "max_temp": 84.9,
-                    "min_temp": 47.55,
+                    "date": "September 06, 2021",
+                    "sunrise": "September 06, 07:34 AM -0600",
+                    "sunset": "September 06, 08:32 PM -0600",
+                    "max_temp": 88.25,
+                    "min_temp": 52.95,
                     "conditions": "clear sky",
                     "icon": "01d"
                 },
                 {
-                    "date": "August 10, 2021",
-                    "sunrise": "August 10, 06:03 AM -0700",
-                    "sunset": "August 10, 08:17 PM -0700",
-                    "max_temp": 93.87,
-                    "min_temp": 56.82,
-                    "conditions": "few clouds",
-                    "icon": "02d"
+                    "date": "September 07, 2021",
+                    "sunrise": "September 07, 07:35 AM -0600",
+                    "sunset": "September 07, 08:30 PM -0600",
+                    "max_temp": 95.61,
+                    "min_temp": 57.45,
+                    "conditions": "scattered clouds",
+                    "icon": "03d"
                 },
                 {
-                    "date": "August 11, 2021",
-                    "sunrise": "August 11, 06:04 AM -0700",
-                    "sunset": "August 11, 08:16 PM -0700",
-                    "max_temp": 99.36,
-                    "min_temp": 60.94,
+                    "date": "September 08, 2021",
+                    "sunrise": "September 08, 07:36 AM -0600",
+                    "sunset": "September 08, 08:29 PM -0600",
+                    "max_temp": 85.01,
+                    "min_temp": 55.42,
                     "conditions": "clear sky",
                     "icon": "01d"
                 },
                 {
-                    "date": "August 12, 2021",
-                    "sunrise": "August 12, 06:06 AM -0700",
-                    "sunset": "August 12, 08:14 PM -0700",
-                    "max_temp": 97.86,
-                    "min_temp": 67.82,
-                    "conditions": "clear sky",
-                    "icon": "01d"
+                    "date": "September 09, 2021",
+                    "sunrise": "September 09, 07:38 AM -0600",
+                    "sunset": "September 09, 08:27 PM -0600",
+                    "max_temp": 86.2,
+                    "min_temp": 52.07,
+                    "conditions": "scattered clouds",
+                    "icon": "03d"
                 }
             ],
             "hourly_weather": [
                 {
-                    "time": "09:00 PM",
-                    "temperature": 60.28,
+                    "time": "11:00 AM",
+                    "temperature": 70.38,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "10:00 PM",
-                    "temperature": 60.82,
+                    "time": "12:00 PM",
+                    "temperature": 72.41,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "11:00 PM",
-                    "temperature": 59.18,
+                    "time": "01:00 PM",
+                    "temperature": 75.96,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "12:00 AM",
-                    "temperature": 57.11,
+                    "time": "02:00 PM",
+                    "temperature": 80.37,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "01:00 AM",
-                    "temperature": 54.75,
+                    "time": "03:00 PM",
+                    "temperature": 85.26,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "02:00 AM",
-                    "temperature": 52.14,
+                    "time": "04:00 PM",
+                    "temperature": 89.8,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "03:00 AM",
-                    "temperature": 49.35,
+                    "time": "05:00 PM",
+                    "temperature": 88.36,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 },
                 {
-                    "time": "04:00 AM",
-                    "temperature": 48.72,
+                    "time": "06:00 PM",
+                    "temperature": 86.43,
                     "conditions": "clear sky",
-                    "icon": "01n"
+                    "icon": "01d"
                 }
             ]
         }
@@ -233,37 +244,126 @@ To get a local copy up and running follow these simple steps.
 }
 ```
 
-#### Background image for the city
+### Background image for the city
 - **Request** `GET /api/v1/backgrounds?location=<location>`
 
-*Sample Request:*
+- *Sample Request:*
+
+  `GET /api/v1/forecast?location=bend,or`
+
+- *Sample Response:*
+```
+{
+    "data": {
+        "id": null,
+        "type": "image",
+        "attributes": {
+            "location": "bend,or",
+            "description": "Horseshoe Bend during daytime",
+            "image_urls": {
+                "raw": "https://images.unsplash.com/photo-1483086451546-5a971a934123?ixid=MnwyNTI1NzN8MHwxfHNlYXJjaHwxfHxiZW5kJTJDb3J8ZW58MHx8fHwxNjMwODYxNTAy&ixlib=rb-1.2.1",
+                "full": "https://images.unsplash.com/photo-1483086451546-5a971a934123?crop=entropy&cs=srgb&fm=jpg&ixid=MnwyNTI1NzN8MHwxfHNlYXJjaHwxfHxiZW5kJTJDb3J8ZW58MHx8fHwxNjMwODYxNTAy&ixlib=rb-1.2.1&q=85",
+                "regular": "https://images.unsplash.com/photo-1483086451546-5a971a934123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTI1NzN8MHwxfHNlYXJjaHwxfHxiZW5kJTJDb3J8ZW58MHx8fHwxNjMwODYxNTAy&ixlib=rb-1.2.1&q=80&w=1080",
+                "small": "https://images.unsplash.com/photo-1483086451546-5a971a934123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTI1NzN8MHwxfHNlYXJjaHwxfHxiZW5kJTJDb3J8ZW58MHx8fHwxNjMwODYxNTAy&ixlib=rb-1.2.1&q=80&w=400",
+                "thumb": "https://images.unsplash.com/photo-1483086451546-5a971a934123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTI1NzN8MHwxfHNlYXJjaHwxfHxiZW5kJTJDb3J8ZW58MHx8fHwxNjMwODYxNTAy&ixlib=rb-1.2.1&q=80&w=200"
+            },
+            "credit": {
+                "name": "Des Récits",
+                "self": "https://api.unsplash.com/users/desrecits",
+                "html": "https://unsplash.com/@desrecits",
+                "photos": "https://api.unsplash.com/users/desrecits/photos",
+                "portfolio": "https://api.unsplash.com/users/desrecits/portfolio"
+            }
+        }
+    }
+}
 ```
 
-```
-
-#### User Registration
+### User Registration
 - **Request** `POST /api/v1/users`
 
-*Sample Request:*
+- *Sample Request:*
+
+  ```
+  {
+    "email": "missfrizbeethemouse@pets.com",
+    "password": "***************ries",
+    "password_confirmation":  "***************ries"
+  }
+  ```
+
+- *Sample Response:*
+```
+{
+    "data": {
+        "id": "10",
+        "type": "users",
+        "attributes": {
+            "email": "missfrizbeethemouse@pets.com",
+            "api_key": "****************************fO9x"
+        }
+    }
+}
 ```
 
-```
-
-#### Login
+### Login
 - **Request** `POST /api/v1/sessions`
 
-*Sample Request:*
+- *Sample Request:*
+
+  ```
+  {
+    "email": "tedthedog@pets.com",
+    "password": "**************wels"
+  }
+  ```
+
+- *Sample Response:*
+```
+{
+    "data": {
+        "id": "3",
+        "type": "users",
+        "attributes": {
+            "email": "tedthedog@pets.com",
+            "api_key": "****************************RPhR"
+        }
+    }
+}
 ```
 
-```
-
-#### Road Trip
+### Road Trip
 - **Request** `POST /api/v1/road_trip`
 
-*Sample Request:*
+- *Sample Request:*
+
+  ```
+  {
+    "origin": "Denver,CO",
+    "destination": "Bend,OR",
+    "api_key": "****************************dXIp"
+  }
+  ```
+
+- *Sample Response:*
+```
+{
+    "data": {
+        "id": null,
+        "type": "roadtrip",
+        "attributes": {
+            "start_city": "Denver,CO",
+            "end_city": "Bend,OR",
+            "travel_time": "16:13:11",
+            "weather_at_eta": {
+                "temperature": 55.51,
+                "conditions": "overcast clouds"
+            }
+        }
+    }
+}
 ```
 
-```
 <!-- ROADMAP -->
 ## Roadmap
 
