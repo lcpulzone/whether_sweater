@@ -1,9 +1,10 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+<div align="center">
+  <a href=https://github.com/lcpulzone/whether_sweater/graphs/contributors><img src="https://img.shields.io/github/contributors/lcpulzone/whether_sweater.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/lcpulzone/whether_sweater/network/members><img src="https://img.shields.io/github/forks/lcpulzone/whether_sweater.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/lcpulzone/whether_sweater/stargazers><img src="https://img.shields.io/github/stars/lcpulzone/whether_sweater.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/lcpulzone/whether_sweater/issues><img src="https://img.shields.io/github/issues/lcpulzone/whether_sweater.svg?style=for-the-badge" /></a>
+<a href=https://www.linkedin.com/in/lcpulzone/><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" /></a>
+</div>
 
 
 <!-- PROJECT LOGO -->
@@ -18,7 +19,11 @@
     This is a back-end application that exposes API's to support building an application that to plan road trips.  <br>
     The API's exposed will allow front-end developers to show users the current weather as well as the forecasted weather when they arrive at their destination.
     <br />
-    <a href="https://github.com/lcpulzone/whether_sweater"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/lcpulzone/whether_sweater">
+    <a href="https://github.com/lcpulzone/whether_sweater/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/lcpulzone/whether_sweater/issues">Request Feature</a>
+    <br />
     <br />
     <br />
   </p>
