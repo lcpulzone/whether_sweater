@@ -83,7 +83,7 @@ The goal of this project was to work in a service-oriented architecture to expos
 ### Built With
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)<br />
-![tested with rspec](https://github.com/lcpulzone/tea_time/blob/main/tested-with-rspec.svg)/)
+![tested with rspec](https://github.com/lcpulzone/tea_time/blob/main/tested-with-rspec.svg)
 
 
 <!-- GETTING STARTED -->
