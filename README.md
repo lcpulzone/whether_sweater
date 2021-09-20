@@ -82,9 +82,8 @@ The goal of this project was to work in a service-oriented architecture to expos
 
 ### Built With
 
-* [Ruby on Rails](https://rubyonrails.org/)
-
-
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)<br />
+![tested with rspec](https://github.com/lcpulzone/tea_time/blob/main/tested-with-rspec.svg)/)
 
 
 <!-- GETTING STARTED -->
@@ -92,8 +91,8 @@ The goal of this project was to work in a service-oriented architecture to expos
 
 ### Prerequisites
 
-* Rails 5.2.6
-* Ruby 2.7.2
+[Rails 5.2.6](https://rubyonrails.org/)<br />
+[Ruby 2.7.2](https://www.ruby-lang.org/en/)
 * API from [Open Weather](https://openweathermap.org/appid)
 
 * API from [Map Quest](https://developer.mapquest.com/)
