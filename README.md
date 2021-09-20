@@ -376,7 +376,7 @@ See the [open issues](https://github.com/lcpulzone/whether_sweater/issues) for a
 <!-- CONTACT -->
 ## Contact
 
-Leigh Cepriano Pulzone - Twitter:  [@lcpulzone](https://twitter.com/lcpulzone) - Email: lcpulzone@gmail.com
+Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub](https://github.com/lcpulzone) - [Email](lcpulzone@gmail.com)
 
 Project Link: [https://github.com/lcpulzone/whether_sweater](https://github.com/lcpulzone/whether_sweater)
 
