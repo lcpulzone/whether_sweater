@@ -4,6 +4,7 @@ class Api::V1::UsersController < ApplicationController
   def create
     user = User.new(user_params)
     user.api_key = @key
+    
     if user.password != user.password_confirmation || user.password.nil? && user.password_confirmation.nil?
       render json: {error: "Email and/or Password are incorrect and/or missing, please try again"}, status: 400
     elsif User.find_by(email: user[:email]).present? || user.email.nil?
