@@ -8,6 +8,7 @@ class BackgroundImageService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+private
   def self.conn
     Faraday.new(url: "https://api.unsplash.com") do |faraday|
       faraday.headers[:Authorization] = "Client-ID #{ENV['UN_API_KEY']}"
