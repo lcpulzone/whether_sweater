@@ -8,7 +8,7 @@ class WeatherService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-private
+private  
   def self.conn
     Faraday.new(url: 'https://api.openweathermap.org')
   end
